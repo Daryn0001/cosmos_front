@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cosmo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+
+    <button class="back-to-top"></button>
+   <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+           <div class="header__inner">
+
+                  <div class="user" id="user">
+                   <div class="user__avatar">
+                       <img src="img/avatar2.png" width="57px" height="57px" alt="">
+                   </div>
+                   <div class="user__content">
+                       <h4 class="user__name" id="user_name"></h4>
+                       <h5 class="log__out">Log Out</h5>
+                   </div>
+               </div>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+
+               <nav class="nav" id="nav">
+                   <a class="nav__link" href=".header" id="nav1">main</a>
+                   <a class="nav__link" href=".sections" id="nav2">solar system</a>
+                   <a class="nav__link" href=".news" id="nav3">news</a>
+                   <a class="nav__link" href=".footer" id="nav4">contact</a>
+                   <button class="nav__link  nav__link--btn"  id="reg">sign up</button>
+               </nav>
+           </div>
+        </div>
+    </header>
+
+
+<!-- REGISTER-->
+
+
+<!-- LOG IN -->
+
+<div class="forms" id="logIn">
+    <div class="back_form">
+                <div class="forms-content"> <img src="img/x-circle.svg"  alt="close" class="close" width="7%" >
+                   <h2 class="h2" style="padding-bottom: 15px">LOG IN</h2>
+                    <form >
+                        <p>
+                            <input id="username" type="text" autofocus autocomplete="on"placeholder="User Name" required> </p>
+                        <p>
+                            <input id="userpass" type="password" title="sex or more characters" pattern=".{6,}" placeholder="Password" required> </p>
+
+                            <input value="Log In" type="submit" onclick="login(username.value, userpass.value)" class="btn" style="width: 80px;">
+                            <div id="create" class="btn2" >create account</div>
+                    </form>
+                </div>
+            </div>
+</div>
+
+<!-- SIGN UP -->
+
+ <div class="secondForm" id="signUp">
+            <div class="backForm">
+                <div class="secondForm-content">
+                   <img src="img/x-circle.svg"  alt="close" class="close2" width="8%">
+                    <h2 class="h2" style="padding-bottom: 15px">CREATE ACCOUNT</h2>
+                    <form>
+                        <p>
+                            <input id="username2" type="text" autofocus autocomplete="on" placeholder="Enter Your Name" required> </p>
+                        <p>
+                            <input id="surname2" type="text" autofocus autocomplete="on" placeholder="Enter Your Surname" required> </p>
+                        <p>
+                            <input  type="email" id="Email" placeholder="Email" required> </p>
+                        <p>
+                            <input id="userpass1" type="password" pattern=".{6,}" title="sex or more characters" placeholder="Password" required> </p>
+                        <p>
+                            <input id="userpass2" type="password" pattern=".{6,}" title="sex or more characters"  placeholder="Reapeat your password" required> </p>
+                             <input type="submit"  class="btn" value="Sign Up" onclick="login2(username2.value, surname2.value, Email.value, userpass1.value, userpass2.value)">
+                            <div id="already" class="btn2" >I already have an account</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- INTRO -->
+    <section class="intro" id="intro">
+        <div class="container">
+
+
+            <div class="intro__inner">
+
+                <div class="intro__content">
+
+                   <h1 class="intro__title"> Astronomy takes us from this world to another.</h1>
+                   <h3 class="intro__title author">Plato</h3>
+                    <div class="intro__btn" id="intro__btn">
+                       <div class="btn__background"></div>
+                        <div class="btn__text" id="btn__text">join</div>
+                        <img src="img/arrow-right.svg" alt="arrow-right" >
+                    </div>
+
+                </div>
+
+
+
+                <div class="intro__photo">
+                    <img src="img/introduction-visual.png" alt="">
+                </div>
+
+            </div>
+
+                <div class="mini-rectangle"></div>
+
+<!-- INTRO BOTTOM -->
+
+                <div class="intro__bottom">
+
+
+                   <!-- 1 text -->
+                    <div class="intro__text">
+                        <h2 class="title">Hubble Telescope</h2>
+                        <p class="text">Hubble Telescope Since its 1990 launch, Hubble has changed our fundamental understanding of the universe.</p>
+                        <button class="btn__more">learn more</button>
+                    </div>
+                    <!-- 2 text -->
+                     <div class="intro__text">
+                        <h2 class="title">Moon to Mars</h2>
+                        <p class="text">NASA's Curiosity Takes Selfie With 'Mary Anning' on the Red Planet</p>
+                        <button class="btn__more">learn more</button>
+                    </div>
+                    <!-- 3 text -->
+                     <div class="intro__text">
+                        <h2 class="title">Living in Space</h2>
+                        <p class="text">NASA Challenge Seeks Innovations to Excavate Moon Resources</p>
+                        <button class="btn__more">learn more</button>
+                    </div>
+
+
+                </div>
+
+        </div>
+    </section>
+
+    <!-- SECOND PAGE -->
+    <section class="sections">
+        <div class="container">
+           <h1 class="section-title">solar system</h1>
+            <div class="slider" >
+
+               <!-- 1 -->
+                 <div  class="slider__item">
+                    <img class="item__img" data-lazy="img/sun.png"  alt="sun" >
+                    <h2 id="sun" class="item__names">sun</h2>
+                </div>
+
+                <!-- 2 -->
+                 <div class="slider__item">
+                    <img class="item__img" data-lazy="img/mercury.png"  alt="" >
+                     <h2 class="item__names">mercury</h2>
+                </div>
+
+                <!-- 3 -->
+                <div class="slider__item">
+                    <img class="item__img" data-lazy="img/venus.png"  alt="" >
+                     <h2 class="item__names">venus</h2>
+                </div>
+
+                 <!-- 4 -->
+                 <div class="slider__item">
+                    <img class="item__img" data-lazy="img/earth2.png"  alt="" >
+                     <h2 class="item__names">earth</h2>
+                </div>
+                <!-- 5 -->
+                 <div class="slider__item">
+                    <img class="item__img" data-lazy="img/mars.png"  alt="">
+                     <h2 class="item__names">mars</h2>
+                </div>
+
+                <!-- 6 -->
+                 <div class="slider__item">
+                    <img class="item__img" data-lazy="img/jupiter2.png"  alt="">
+                    <h2 class="item__names">jupiter</h2>
+                </div>
+
+                 <!-- 7 -->
+                <div class="slider__item">
+                    <img class="item__img" data-lazy="img/saturn.png"  alt="">
+                    <h2 class="item__names">saturn</h2>
+                </div>
+
+                  <!-- 8 -->
+                <div class="slider__item">
+                    <img class="item__img" data-lazy="img/uranus2.png"  alt="">
+                    <h2 class="item__names">uranus</h2>
+                </div>
+
+                  <!-- 9 -->
+                <div class="slider__item">
+                    <img class="item__img" data-lazy="img/neptune.png"  alt="">
+                    <h2 class="item__names">neptune</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- MAIN -->
+
+    <main class="main" id="main">
+        <div class="container">
+
+            <div class="main__inner" >
+
+                <div class="sun-info" id="info">
+                    <img src="img/x.svg" alt="" class="cancel" id="cancel">
+                    <div class="sun__text">
+                       <a href="" class="link" id="link" target="_blank">you can find out more here</a>
+                        <h3 class="min_title" id="title">sun</h3>
+                        <p  class="info__text" id="text"></p>
+                    </div>
+                    <div class="photos" >
+
+                        <img class="photo" src="" id="photo">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--SOLAR SYSTEM -->
+    <div class="container">
+       <div class="system">
+
+           <div class="content__sun">
+            <div class="star sun"></div>
+                </div>
+
+           <div class="content__mercury">
+               <div class="planet mercury"></div>
+               </div>
+
+           <div class="content__venus">
+               <div class="planet venus"></div>
+                </div>
+
+            <div class="content__earth">
+                <div class="planet earth"></div>
+                </div>
+
+            <div class="content__mars">
+                <div class="planet mars"></div>
+                </div>
+
+            <div class="content__jupiter">
+                <div class="planet jupiter"></div>
+                </div>
+
+            <div class="content__saturn">
+                <div class="planet saturn"></div>
+                </div>
+
+            <div class="content__uranus">
+                <div class="planet uranus"></div>
+                </div>
+
+            <div class="content__neptune">
+                <div class="planet neptune"></div>
+                </div>
+        </div>
+    </div>
+
+        <!-- NEWS -->
+
+    <div class="container">
+        <div class="news" id="news">
+            <h1 class="news__title">Most discussed on the topic Space</h1>
+            <div class="news__inner">
+                <!-- 1 -->
+                <div class="new" id="new_1">
+                    <div class="new__photo">
+                        <img src="img/new1.jpg" alt="">
+                    </div>
+                    <div class="new__title" id="">
+                        <h2>NASA, SpaceX Crew-1 mission had a successful launch.</h2>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="new" id="new_2">
+                    <div class="new__photo">
+                        <img src="img/new2.jpg" alt="" >
+                    </div>
+                    <div class="new__title">
+                        <h2>Arecibo Observatory will be decommissioned.</h2>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="new" id="new_3">
+                <div class="new__photo">
+                        <img src="img/new3.jpg"  alt="">
+                    </div>
+                    <div class="new__title">
+                        <h2>Green meteor lights up the night sky.</h2>
+                    </div>
+                    </div>
+                    <!-- 4 -->
+                <div class="new" id="new_4">
+                <div class="new__photo">
+                        <img  src="img/new4.jpg"  alt="">
+                    </div>
+                    <div class="new__title">
+                        <h2>Cosmonaut duo performs an almost 7-hour spacewalk.</h2>
+                    </div>
+                    </div>
+                    <!-- 5 -->
+                <div class="new" id="new_5">
+                <div class="new__photo">
+                        <img src="img/new5.jpg"  alt="">
+                    </div>
+                    <div class="new__title">
+                        <h2>Satellites keep an eye on Hurricane Iota.</h2>
+                    </div>
+                    </div>
+                    <!-- 6 -->
+                <div class="new" id="new_6">
+                    <div class="new__photo">
+                        <img  src="img/new6.jpg"  alt="">
+                    </div>
+                    <div class="new__title">
+                        <h2>Researchers may have finally figured out a nebula puzzle.</h2>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="new__info" id='new_info'>
+          <div class="inner">
+          <img src="img/x.svg" alt="" class="cancel2" id="cancel2">
+           <h2 class="title2" id='title2'></h2>
+
+            <div class="picture">
+                <img src="/img/scafandr.svg" alt="" class="picture__inner" id="picture">
+            </div>
+
+            <div class="new__text">
+                <p class="new__text__info" id='text2'></p>
+                <div class="link2">
+                      <a href="" class="link2__inner" id="link2" target="_blank">full story</a>
+                       <img class="link2__arrow" src="img/arrow-right.svg">
+                </div>
+
+            </div>
+
+              </div>
+          </div>
+
+    </div>
+<div class="m">
+    <footer class="footer">
+        <div class="container">
+        <div class="footer__inner">
+
+                <div class="left">
+                <div class="address">
+                    <img src="img/map-pin.svg" alt="">
+                    <div class="some street">
+                        <h4>21 Revolution Street</h4>
+                        <h4>Almaty, Kazakhstan</h4>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="img/phone.svg" alt="">
+                    <div class="some number">+7 777 666 55 44</div>
+                </div>
+                <div class="post">
+                    <img src="img/mail.svg" alt="">
+                    <div class="some mail">190103216@stu.sdu.edu.kz</div>
+                </div>
+            </div>
+
+            <div class="right">
+               <div class="mini_container">
+                <div class="title3">About me</div>
+                <div class="text3">
+                <p class="text4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maxime, ea exercitationem praesentium. Dolorum, quod?</p></div>
+                <div class="social">
+                    <img src="img/facebook.svg" alt="map">
+                    <img src="img/github.svg" alt="">
+                    <img src="img/twitter.svg" alt="">
+                    <img src="img/linkedin.svg" alt="">
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </footer>
+</div>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+//main: ../style.less
+
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    z-index: 3;
+
+}
+
+.nav__link {
+    margin-left: 2rem;
+    position: relative;
+
+    font-size: 0.93rem;
+    color: @white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:after {
+        content: "";
+        width: 0%;
+        height: 0.13rem;
+        background-color: @white;
+        position: absolute;
+        bottom: -0.25rem;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+
+
+    &:hover:not(.nav__link--btn) {
+
+        &:after{
+            width: 100%;
+        }
+
+    }
+
+    /* Modificators */
+    &--btn {
+        display: none;
+        padding: 0.6rem 2rem;
+        background-color: @background-color;
+        border: 2px solid @white;
+        border-radius: 20px;
+        cursor: pointer;
+
+        transition: background-color 0.2s linear, color .2s linear;
+
+        &:hover {
+            background-color: @white;
+            color: @black;
+        }
+    }
+
+}
+
+
+
+

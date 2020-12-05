@@ -1,0 +1,217 @@
+//main: ../style.less
+
+
+/* LOG IN */
+
+
+.forms {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 25;
+
+
+}
+
+
+.back_form {
+    display: flex;
+    max-width: 550px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    background-color: #4834d4;
+    background-image: linear-gradient(315deg, #4834d4 0%, #151515 74%);
+    border-radius: 10px;
+    border: 0.5px solid @grey;
+
+}
+
+.forms-content {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    max-width: 500px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top:25px;
+    margin-left:25px;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    border: 0.5px solid @grey;
+
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 5px;
+    display: inline-block;
+    width: 70px;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 450;
+    text-decoration: none;
+     background-color: #000000;
+     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+
+     transition: background .1s linear, color .1s linear;
+ }
+.btn:hover {
+     background-color: #29539b;
+     background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+
+
+input {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    padding: 6px;
+}
+
+.close {
+    position: static;
+    margin-left: 87%;
+    padding-top: 2%;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+
+
+/* SIGN UP */
+.secondForm{
+     position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+   opacity: 1;
+    z-index: 25;
+}
+
+.backForm{
+    max-width: 550px;
+    max-height: 520px;
+    width: 100%;
+    height: 100%;
+    background-color: #4834d4;
+    background-image: linear-gradient(315deg, #4834d4 0%, #151515 74%);
+    border-radius: 10px;
+    border: 0.5px solid @grey;
+}
+
+.secondForm-content {
+    padding-top: 20px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    max-width: 500px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 4.4%;
+    margin-top: 6.3%;
+     border: 0.5px solid @grey;
+
+    align-content: center;
+    align-items: center;
+    border-radius: 3%;
+    text-align: center;
+}
+.btn2 {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 1%;
+    display: inline-block;
+    color: #cecdcd;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+.btn2:hover {
+    background-color: #85838d;
+}
+
+.close2 {
+    position: static;
+    width: 7%;
+    margin-left: 85%;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+.h2{
+    color:#c1ddf5;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 767px){
+     .backForm{
+        width: 80%;
+        height: 75%;
+    }
+    .secondForm-content{
+        width: 92%;
+        height: 95%;
+    }
+    .btn2{
+        font-size: 8px;
+    }
+    .btn{
+        width: 60px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+     .backForm{
+        width: 96%;
+        height: 96%;
+    }
+    .secondForm-content{
+        width: 90%;
+        height: 100%;
+    }
+    .btn2{
+        font-size: 8px;
+    }
+    .h2{
+        font-size: 16px;
+    }
+
+    .back_form{
+        width: 96%;
+        height: 96%;
+    }
+    .forms-content{
+         width: 89%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,89 @@
+// compress: true, sourceMap: true
+
+@import "vars";
+
+html{
+    font-size: 15px;
+}
+
+
+body{
+    background-color: @background-color;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    color: @white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.back-to-top{
+    position: fixed;
+    right: 2%;
+    bottom: 20%;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: @grey;
+    cursor: pointer;
+    z-index: 10;
+    &:hover,
+    &:focus{
+        filter: brightness(1.5);
+        outline: none;
+    }
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &::before{
+        width: 4px;
+        height: 25px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: @light-grey;
+    }
+    &::after{
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-top: 5px solid @light-grey;
+        border-left: 5px solid @light-grey;
+    }
+
+}
+
+
+
+// BLOKS
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/menu";
+@import "blocks/intro";
+@import "blocks/sections";
+@import "blocks/slider";
+@import "blocks/solar-system";
+@import "blocks/planets";
+@import "blocks/news";
+@import "blocks/footer";
+@import "blocks/register";
+
+

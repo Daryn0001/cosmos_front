@@ -1,0 +1,134 @@
+//main: ../style.less
+
+.sections{
+    max-width: 100%;
+    padding-top: 8%;
+    margin: 0 auto;
+}
+
+/* TITLE */
+
+.section-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+/* SLIDER ITEMS */
+
+.slider__item {
+    text-align: center;
+    max-width: 450px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .3s ease .1s;
+
+    & .item__img {
+       max-width: 430px;
+        width: 75%;
+        transition: all .5s linear .1s;
+
+
+    }
+}
+
+/* SLICK CENTER */
+
+
+    .slider__item.slick-center  {
+        opacity: 1;
+        & img {
+            width: 100%;
+        }
+        & .item__names {
+            display: block;
+        }
+    }
+
+/* ITEM NAMES */
+
+.item__names {
+    display: none;
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    transition: all .3s linear .1s;
+}
+
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 992px){
+    .section-title{
+        font-size: 1.6rem;
+    }
+    .item__names{
+        font-size: 1.8rem;
+    }
+    .slider__item{
+        max-width: 400px;
+        & .item__img{
+            width: 65%;
+        }
+    }
+    .slider__item.slick-center  {
+    opacity: 1;
+
+        & img {
+        width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 767px){
+    .section-title{
+        font-size: 1.3rem;
+    }
+    .item__names{
+        font-size: 1.6rem;
+    }
+    .slider__item{
+        max-width: 340px;
+
+         & .item__img{
+            width: 80%;
+        }
+    }
+    .slider__item.slick-center  {
+    opacity: 1;
+
+        & img {
+        width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    section-title{
+        font-size: 1.1rem;
+    }
+    .item__names{
+        font-size: 1.3rem;
+    }
+    .slider__item{
+        //max-width: 250px;
+         & .item__img{
+            width: 60%;
+        }
+    }
+    .slider__item.slick-center  {
+    opacity: 1;
+
+        & img {
+        width: 70%;
+        }
+    }
+}
+
+
+
