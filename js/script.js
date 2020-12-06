@@ -251,7 +251,7 @@ var footer1 = document.querySelector('#new_info');
 
 button.addEventListener('click', () => {
     scrollTo(footer1);
-})
+});
 
 
 
