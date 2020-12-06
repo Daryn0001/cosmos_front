@@ -428,7 +428,6 @@ h6 {
   max-height: 180px;
   color: rgba(255, 255, 255, 0.15);
   transition: color 0.2s linear;
-  cursor: pointer;
 }
 .intro__text:hover {
   color: rgba(255, 255, 255, 0.9);
@@ -1348,7 +1347,7 @@ footer h2 {
 .footer span {
   position: absolute;
   bottom: -50px;
-  background: #3f00ea;
+  background: #320d98;
   border-radius: 50%;
   pointer-events: none;
   animation: animate 4s linear infinite;
@@ -1487,6 +1486,11 @@ footer h2 {
   }
   .some {
     font-size: 12px;
+  }
+}
+@media (max-width: 890px) {
+  .footer span {
+    display: none;
   }
 }
 @media (max-width: 767px) {
