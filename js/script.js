@@ -5,8 +5,8 @@ $(document).ready(function(){
        slidesToScroll: 1,
        dots: true,
        speed: 500,
-       autoplay: false,
-       autoplaySpeed: 2000,
+       autoplay: true,
+       autoplaySpeed: 1800,
        waitForAnimate: true,
        centerMode: true,
        variableWidth: false,
@@ -436,11 +436,11 @@ $(document).ready(function(){
 });
 
 // BUBBLE CREATER
- /*function createBubble(){
+ function createBubble(){
          const section = document.querySelector('footer')
 
          const createElement = document.createElement('span')
-         var size = Math.random() * 60;
+         var size = Math.random() * 70;
 
          createElement.style.width = 20 + size + 'px';
          createElement.style.height = 20 + size + 'px';
@@ -452,4 +452,4 @@ $(document).ready(function(){
              }, 4000)
         }
          setInterval(createBubble, 50)
-*/
+
