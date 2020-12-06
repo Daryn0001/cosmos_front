@@ -235,6 +235,26 @@ function clickHandler(e) {
 }
 
 
+/* Scroll Down To News */
+
+function scrollTo(element){
+    window.scroll({
+        top: element.offsetTop,
+        behavior: 'smooth'
+    });
+}
+
+var button = document.querySelector('.news');
+
+var footer1 = document.querySelector('#new_info');
+
+
+button.addEventListener('click', () => {
+    scrollTo(footer1);
+})
+
+
+
 // SIGN UP AND LOG IN
 
 $(document).ready(function(){
